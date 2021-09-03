@@ -27,7 +27,7 @@
     A exercise in pandas for cleaning and plotting a small dataset <br \>The set contains 50 rows of: StudentID, Age, email, hrsStudy, FinalGrade
     <br />
     ·
-    <a href="https://github.com/umaimehm/umaimehm/Intro_to_AI_2021/issues">Report Bug</a>
+    <a href="https://github.com/umaimehm/Intro_to_AI_2021/issues">Report Bug</a>
     ·
     <a href="https://github.com/umaimehm/Intro_to_AI_2021/issues">Request Feature</a>
   </p>
@@ -113,7 +113,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[issues-shield]: https://img.shields.io/github/issues/-/Dave3625-21-Lab.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/umaimehm/Intro_to_AI_2021.svg?style=for-the-badge
 [issues-url]: https://github.com/umaimehm/Intro_to_AI_2021/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/umaimehm/Intro_to_AI_2021/blob/main/Lab1/LICENSE
