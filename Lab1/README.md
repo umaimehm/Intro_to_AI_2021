@@ -100,6 +100,82 @@ for i in range(50):
       "+str(studId+"@oslomet.no"+","+str(random.randint(0, 12)))+","+str(random.randint(20, 100)))
 ```
 
+## More hints
+
+Due to many questions about pandas and python in general i'll provide some extra hints
+
+**Q: I get an error when running**
+```python
+df = pd.read_csv(url, sep=',')
+```
+**A: This might be caused by two different problems**
+1.  Check your imports, for this lab you should consider these imports
+```python
+#Import modules
+%matplotlib inline
+import pandas as pd
+import numpy as np
+from scipy import stats
+```
+2.  If you have imported pandas, check that you assign a value to the variable **url**
+
+**Q: I can't convert values to int or float**
+Even after running
+```python
+df=df.replace(r'^\s*$', np.nan, regex=True)
+```
+**A: Running the above code only replace whitespace with a nan value**
+
+nan stands for Not a Number, and can not be converted to int or float. The reason we convert missing values to nan is that pandas lets us handle those values quite simple.
+If you want to assign nan's a value, you can use
+```python
+df["Column"].replace(np.nan, VALUE, inplace=True)
+#Column is a placeholder for the column you want to change. 
+#In this example we have the columns StudentID,Age,email,hrsStudy,FinalGrade
+```
+After you have replaced the nan values you want, you can drop rows containing nan with:
+```python
+df.dropna(inplace = True)
+```
+**Q: df["FinalGrade"].plot.box() don't work**
+
+1.  When running this code I get an error
+2.  The code run, but I can't see a plot
+
+**A:**
+
+1.  If you get an error and your code looks correct, try to reinstall matplotlib.
+    Go to your conda promt (make sure your in the right env) and write:
+    ```
+    conda uninstall matplotlib
+    conda update
+    conda install matplotlib
+    ```
+    rest the kernel in jupyter notebook and try again
+
+2.  If your code runs, but only produce
+```
+<matplotlib.axes._subplots.AxesSubplot at 0x7f7cb044f7d0>
+```
+add 
+```
+%matplotlib inline
+````
+in the includes section
+
+**Q: How do I remove outliers?**
+
+**A:**
+Check [kite][kite-outliers] for a hint.
+On this set edit
+```python
+filtered_entries = (abs_z_scores < 3).all(axis=1)
+#to
+filtered_entries = (abs_z_scores < 3)
+```
+**Q: Will a solution be provided?**
+
+**A: Yes, a solution will be uploaded at the end of the lab**
 
 <!-- LICENSE -->
 ## License
@@ -123,5 +199,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [pandas-doc]: https://pandas.pydata.org/docs/reference/index.html#api
 [numpy-doc]: https://numpy.org/doc/stable/
 [columns-condition]: https://www.dataquest.io/blog/tutorial-add-column-pandas-dataframe-based-on-if-else-condition/
+[kite-outliers]: https://www.kite.com/python/answers/how-to-remove-outliers-from-a-pandas-dataframe-in-python/
 
 
