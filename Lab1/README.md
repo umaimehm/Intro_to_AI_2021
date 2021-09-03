@@ -17,7 +17,7 @@
 <br />
 <h3 align="center">Dave3625 - Lab1</h3>
 <p align="center">
-  <a href="https://github.com/-/Dave3625-21-Lab/tree/main/Lab1">
+  <a href="https://github.com/umaimehm/Intro_to_AI_2021/tree/main/Lab1">
     <img src="img/logo.png" alt="Data wrangling" width="791" height="442">
   </a>
 
@@ -27,9 +27,9 @@
     A exercise in pandas for cleaning and plotting a small dataset <br \>The set contains 50 rows of: StudentID, Age, email, hrsStudy, FinalGrade
     <br />
     ·
-    <a href="https://github.com/-/Dave3625-21-Lab/issues">Report Bug</a>
+    <a href="https://github.com/umaimehm/umaimehm/Intro_to_AI_2021/issues">Report Bug</a>
     ·
-    <a href="https://github.com/-/Dave3625-21-Lab/issues">Request Feature</a>
+    <a href="https://github.com/umaimehm/Intro_to_AI_2021/issues">Request Feature</a>
   </p>
 </p>
 
@@ -48,7 +48,7 @@ We will be using [pandas][pandas-doc] and [numpy][numpy-doc].
 Hint: 
 ```
 #If you want to use the csv from this git set
-# url = "https://raw.githubusercontent.com/-/Dave3625-21-Lab/main/Lab1/stud.csv"
+# url = "https://raw.githubusercontent.com/umaimehm/Intro_to_AI_2021/main/Lab1/stud.csv"
 # You can also download the csv and set
 # url="{filepath]/ctud.csv"
 df = pd.read_csv(url, sep=',')
@@ -114,9 +114,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [issues-shield]: https://img.shields.io/github/issues/-/Dave3625-21-Lab.svg?style=for-the-badge
-[issues-url]: https://github.com/-/Dave3625-21-Lab/issues
+[issues-url]: https://github.com/umaimehm/Intro_to_AI_2021/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/-/Dave3625-21-Lab/blob/main/Lab1/LICENSE
+[license-url]: https://github.com/umaimehm/Intro_to_AI_2021/blob/main/Lab1/LICENSE
 
 [dfinfo]: img/dfinfo.png
 [barplot]: img/barplot.png
