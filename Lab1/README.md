@@ -18,7 +18,7 @@
 <h3 align="center">Dave3625 - Lab1</h3>
 <p align="center">
   <a href="https://github.com/umaimehm/Intro_to_AI_2021/tree/main/Lab1">
-    <img src="img/logo.png" alt="Data wrangling" width="791" height="442">
+    <img src="img/logo.png" alt="Data wrangling" width="auto" height="auto">
   </a>
 
   
