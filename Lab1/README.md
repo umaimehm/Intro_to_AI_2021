@@ -173,6 +173,14 @@ filtered_entries = (abs_z_scores < 3).all(axis=1)
 #to
 filtered_entries = (abs_z_scores < 3)
 ```
+**Q: Can you provide some tutorials for jupyter and pandas?**
+
+I need some good tutorials to get me started. Can you recomend any?
+
+**A: Yes**
+
+[This site][pandas-tutorial] cover many important aspects of pandas, and I use it often as a refrence.
+
 **Q: Will a solution be provided?**
 
 **A: Yes, a solution will be uploaded at the end of the lab**
@@ -200,5 +208,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [numpy-doc]: https://numpy.org/doc/stable/
 [columns-condition]: https://www.dataquest.io/blog/tutorial-add-column-pandas-dataframe-based-on-if-else-condition/
 [kite-outliers]: https://www.kite.com/python/answers/how-to-remove-outliers-from-a-pandas-dataframe-in-python/
-
+[pandas-tutorial]: https://github.com/TirendazAcademy/PANDAS-TUTORIAL
 
