@@ -179,7 +179,9 @@ I need some good tutorials to get me started. Can you recomend any?
 
 **A: Yes**
 
+If you are new to jupyter notebook and pandas [this youtube video][jupyter-tutorial] will be usefull.
 [This site][pandas-tutorial] cover many important aspects of pandas, and I use it often as a refrence.
+
 
 **Q: Will a solution be provided?**
 
@@ -209,4 +211,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [columns-condition]: https://www.dataquest.io/blog/tutorial-add-column-pandas-dataframe-based-on-if-else-condition/
 [kite-outliers]: https://www.kite.com/python/answers/how-to-remove-outliers-from-a-pandas-dataframe-in-python/
 [pandas-tutorial]: https://github.com/TirendazAcademy/PANDAS-TUTORIAL
+[jupyter-tutorial]: https://www.youtube.com/watch?v=vmEHCJofslg
 
