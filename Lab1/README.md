@@ -180,6 +180,7 @@ I need some good tutorials to get me started. Can you recomend any?
 **A: Yes**
 
 If you are new to jupyter notebook and pandas [this youtube video][jupyter-tutorial] will be usefull.
+
 [This site][pandas-tutorial] cover many important aspects of pandas, and I use it often as a refrence.
 
 
