@@ -42,6 +42,9 @@ StudentID, Age, email, hrsStudy, FinalGrade
 
 We will be using [pandas][pandas-doc] and [numpy][numpy-doc].
 
+
+**[Solution added][Solution]**
+
 ## Tasks
 **1. In this lab, you will import the csv file into pandas:**
 
@@ -213,4 +216,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [kite-outliers]: https://www.kite.com/python/answers/how-to-remove-outliers-from-a-pandas-dataframe-in-python/
 [pandas-tutorial]: https://github.com/TirendazAcademy/PANDAS-TUTORIAL
 [jupyter-tutorial]: https://www.youtube.com/watch?v=vmEHCJofslg
+[solution]: Solution.ipynb
 
