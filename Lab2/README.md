@@ -186,6 +186,7 @@ This section will be updated after the first lab session
 
 ## Usefull links
 You can find usefull information about feature engeneering [here][feature-eng-tutorial]
+[pandas cheatsheet][pandas-cheatsheet]
 
 <!-- LICENSE -->
 ## License
@@ -221,5 +222,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [lakeforest.edu]: http://campus.lakeforest.edu/frank/FILES/MLFfiles/Bio150/Titanic/TitanicMETA.pdf
 [get-dummies]: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html
 [get-dummies-vs-onehot]: https://albertum.medium.com/preprocessing-onehotencoder-vs-pandas-get-dummies-3de1f3d77dcc
+[pandas-cheatsheet]: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 
 
