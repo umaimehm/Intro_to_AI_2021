@@ -186,6 +186,7 @@ This section will be updated after the first lab session
 
 ## Usefull links
 You can find usefull information about feature engeneering [here][feature-eng-tutorial]
+
 [pandas cheatsheet][pandas-cheatsheet]
 
 <!-- LICENSE -->
