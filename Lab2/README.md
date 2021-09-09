@@ -17,7 +17,7 @@
 <br />
 <h3 align="center">Dave3625 - Lab2</h3>
 <p align="center">
-  <a href="https://github.com/umaimehm/Intro_to_AI_2021/tree/main/Lab1">
+  <a href="https://github.com/umaimehm/Intro_to_AI_2021/tree/main/Lab2">
     <img src="img/header.png" alt="Data wrangling" width="auto" height="auto">
   </a>
 
@@ -41,7 +41,7 @@ In this lab, we will start to look at feature engineering on the Titanic dataset
 
 *The titanic and titanic2 data frames describe the survival status of individual passengers 
 on the Titanic. The titanic data frame does not contain information from the crew, but it 
-does contain actual ages of half of the passengers.* - [LakeForest.edu][lakeforest.edu]
+does contain actual ages of half of the passengers.* - *[LakeForest.edu][lakeforest.edu]*
 
 We will be using [pandas][pandas-doc], [numpy][numpy-doc] and [seaborn][seaborn-doc].
 
@@ -58,6 +58,11 @@ import seaborn as sns
 import re
 ```
 to your imports.
+
+Load the titanic set found under /data/Titanic.csv as we did in Lab1
+
+Hint:
+Click view as "Raw" and copy the url
 
 ## Tasks
 **1. Check for null and nan values**
@@ -139,7 +144,7 @@ plt.xticks(rotation=45);
 ![plot][pl1]
 
 
-**Convert Age and Fare into categorical data.**
+**3. Convert Age and Fare into categorical data.**
 
  This can be done using pandas qcut function
 ```python
@@ -147,7 +152,7 @@ df['CatAge'] = pd.qcut(df["Age"], q=4, labels=False )
 ```
 do this for both Age and Fare.
 
-**Convert dataframe to binary data**
+**4. Convert dataframe to binary data**
 
 To train a dataset easily, we want all data to be numerical. To achieve this, we need to drop columns that don’t make sense converting to a numerical value. At this point, your dataframe should look something like this:
 
