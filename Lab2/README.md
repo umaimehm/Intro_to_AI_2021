@@ -201,11 +201,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[issues-shield]: https://img.shields.io/github/issues/buzzCraft/Dave3625-21-Lab.svg?style=for-the-badge
-[issues-url]: https://github.com/buzzCraft/Dave3625-21-Lab/issues
+<!-- shields -->
+[issues-shield]: https://img.shields.io/github/issues/umaimehm/Intro_to_AI_2021.svg?style=for-the-badge
+[issues-url]: https://github.com/umaimehm/Intro_to_AI_2021/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/buzzCraft/Dave3625-21-Lab/blob/main/Lab1/LICENSE
+[license-url]: https://github.com/umaimehm/Intro_to_AI_2021/blob/main/Lab1/LICENSE
 
+<!-- images -->
 [names]: img/names.png
 [cC]: img/columnsCount.png
 [cC2]: img/columnsCount2.png
@@ -215,14 +217,20 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [final-df]: img/finalDf.png
 [nan]: img/nan.png
 
+<!-- documentation -->
 [pandas-doc]: https://pandas.pydata.org/docs/reference/index.html#api
 [numpy-doc]: https://numpy.org/doc/stable/
 [seaborn-doc]: https://seaborn.pydata.org/api.html
+
+<!-- tutorials -->
 [feature-eng-tutorial]: https://github.com/PacktPublishing/Python-Feature-Engineering-Cookbook
+[pandas-cheatsheet]: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
+<!-- links -->
 [flip-bool]: https://www.kite.com/python/answers/how-to-invert-a-pandas-boolean-series-in-python
 [lakeforest.edu]: http://campus.lakeforest.edu/frank/FILES/MLFfiles/Bio150/Titanic/TitanicMETA.pdf
 [get-dummies]: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html
 [get-dummies-vs-onehot]: https://albertum.medium.com/preprocessing-onehotencoder-vs-pandas-get-dummies-3de1f3d77dcc
-[pandas-cheatsheet]: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
 
 
