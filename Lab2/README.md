@@ -87,7 +87,7 @@ We can also see that many people has a NaN for Cabin. It’s not as easy as just
 Cabin = True / False
 And set all NaN values = False, all other = True
 ```python
-df['HasCabin'] = df.Cabin.isnull()
+df["HasCabin"] = df.Cabin.isnull()
 ```
 do a df.head() and you can see we have a new column, but there is an error. 
 
@@ -111,7 +111,7 @@ lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1)
 ```
 And in our case we would like to put this data in a new column, so we can run 
 ```python
-df['Title'] = df.Name.apply(lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1)) 
+df["Title"] = df.Name.apply(lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1)) 
 ```
 
 Check with df.head() that you now have acolumn called Title.
@@ -208,9 +208,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [cC]: img/columnsCount.png
 [cC2]: img/columnsCount2.png
 [pl1]: img/plot1.PNG
-[table-task4]: img/table4.PNG
+[table-task4]: img/table4.png
 [table-task4-m]: img/table4-marked.png
-[final-df]: img/finalDf.PNG
+[final-df]: img/finalDf.png
 [nan]: img/nan.png
 
 [pandas-doc]: https://pandas.pydata.org/docs/reference/index.html#api
