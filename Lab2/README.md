@@ -109,6 +109,9 @@ A easy way to extract a sertan string is to use
 ```python
 lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1)
 ```
+
+*What is this syntax? It's called regex, and a [explanation can be found here][regex]*
+
 And in our case we would like to put this data in a new column, so we can run 
 ```python
 df["Title"] = df.Name.apply(lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1)) 
@@ -231,6 +234,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [lakeforest.edu]: http://campus.lakeforest.edu/frank/FILES/MLFfiles/Bio150/Titanic/TitanicMETA.pdf
 [get-dummies]: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html
 [get-dummies-vs-onehot]: https://albertum.medium.com/preprocessing-onehotencoder-vs-pandas-get-dummies-3de1f3d77dcc
+[regex]: https://www.geeksforgeeks.org/python-regex-cheat-sheet/
 
 
 
