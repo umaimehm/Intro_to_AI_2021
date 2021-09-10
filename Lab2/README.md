@@ -120,7 +120,7 @@ df["Title"] = df.Name.apply(lambda x: re.search(' ([A-Z][a-z]+)\.', x).group(1))
 Check with df.head() that you now have acolumn called Title.
 We can now see how many has each title. This can be done in many ways, but calling 
 ```python
-df["column"].values_counts() // you need to replace "column" 
+df["column"].value_counts() // you need to replace "column" 
 # whit the name of the column you want to count
 ```
 ![count][cC]
