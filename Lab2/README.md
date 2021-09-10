@@ -128,7 +128,7 @@ df["column"].value_counts() // you need to replace "column"
 As we can see from the count, we have 18 titles, some of them with only one person. 
 Replace Mlle and Ms with "Miss", and Mme with "Mr" using:
 ```python
-df["column"] = df.["column"].replace({'xxx':'yyy', 'jjj':'iiii', … 'uuu':'iii'})
+df["column"] = df["column"].replace({'xxx':'yyy', 'jjj':'iiii', … 'uuu':'iii'})
 ```
 
 
