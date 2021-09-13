@@ -45,6 +45,8 @@ does contain actual ages of half of the passengers.* - *[LakeForest.edu][lakefor
 
 We will be using [pandas][pandas-doc], [numpy][numpy-doc] and [seaborn][seaborn-doc].
 
+**[Solution added][solution]**
+
 ## New imports
 
 We will use a new package in this lab. Don't worry, it's a python standard package called re, so remember to add
@@ -235,6 +237,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [get-dummies]: https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html
 [get-dummies-vs-onehot]: https://albertum.medium.com/preprocessing-onehotencoder-vs-pandas-get-dummies-3de1f3d77dcc
 [regex]: https://www.geeksforgeeks.org/python-regex-cheat-sheet/
+[solution]: solution.ipynb
 
 
 
