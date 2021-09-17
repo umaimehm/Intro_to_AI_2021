@@ -165,8 +165,8 @@ Feel free to play with both [Faker][faker] and [Laundromat][laundromat] on your 
 
 **3. Time series**
 
-
 Consider opening up a new notebook for this task.
+
 Imports:
 ```python
 %matplotlib inline
