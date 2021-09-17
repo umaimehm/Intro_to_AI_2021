@@ -252,8 +252,15 @@ for index, row in df.iterrows():
 ```
 </details>
 
-As you can see by toing a boxplot, we have some big outliers. 
-![outliers][outli]
+Find the delay as a percent of air_time:
+```python
+psudo code
+percent_delay = (100 * delay)/airtime
+```
+
+As you can see by doing a boxplot, we have some big outliers. 
+
+![outliers][otli]
 
 By analyzing the row with minimum value, we can conclude that these values most probably are a dataset error. We can try to fix the values, but lets just remove outliers.
 
