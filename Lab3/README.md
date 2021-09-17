@@ -225,6 +225,8 @@ It can be a challenge to write this code, so for those of you who are not to fam
 <details>
   <summary>Try to understand this code, because it covers many concepts of pandas and timeseries</summary>
 
+  *Disclamber: This code is not 100% correct, but is written to show how you can work with timeseries. In some cases it will provide the wrong result.*
+
 ```python
 #For every row in df
 for index, row in df.iterrows():
