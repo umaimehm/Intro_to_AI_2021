@@ -53,7 +53,7 @@ Faker and laudromat is new packages and we need to install them. Go to your anac
 
 ```python
 pip install Faker
-
+pip install spacy==2.3.2
 pip install laundromat
 ```
  After the install, you should be able to use
