@@ -212,6 +212,21 @@ Some flights go past midnight as well, but the dataset don’t handle this. So a
 
 This task take more effort to correct, but it’s a nice task for those of you who feel this lab was to easy. We will later on fix negative flight time in a faster and hacky way.
 
+<details>
+  <summary>A proposed solution to the problem</summary>
+
+```python
+for index, row in df.iterrows():
+    #if arr_time is less then dep_time
+    if (row['arr_time']<row['dep_time']):
+        #add one day to arr_time
+        df.loc[index, 'arr_time'] = (row['arr_time'])+ datetime.timedelta(days=1)
+    if (row['sched_arr_time']<row['dep_time']):
+        df.loc[index, 'sched_arr_time'] = (row['sched_arr_time'])+ datetime.timedelta(days=1)
+      
+```
+</details>
+
 When the columns are converted to datetime, you can add and substract
 ```python
 df['newCol'] = df["Col1"]-df["Col2"]
@@ -237,7 +252,12 @@ for index, row in df.iterrows():
 ```
 </details>
 
-Finding outliers
+As you can see by toing a boxplot, we have some big outliers. 
+![outliers][outli]
+
+By analyzing the row with minimum value, we can conclude that these values most probably are a dataset error. We can try to fix the values, but lets just remove outliers.
+
+**Finding outliers**
 This is a huge dataset, and the hacky way to fix negative airtime, don't work 100%, so lets remove some outliers.
 Do a df["percent_delay"].plot.box() to check outliers, and a df["percent_delay"].describe() to see the min and max values
 To make it easy to do remove outliers later on, lets make it a function:
@@ -299,6 +319,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [dfinfo]: img/dfinfo.png
 [df2info]: img/df2info.png
 [flightdata]: data/flight.csv
+[otli]: img/sched_arr_time.png
 
 <!-- documentation -->
 [pandas-doc]: https://pandas.pydata.org/docs/reference/index.html#api
