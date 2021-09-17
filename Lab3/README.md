@@ -53,14 +53,15 @@ Faker and laudromat is new packages and we need to install them. Go to your anac
 
 ```python
 pip install Faker
-pip install spacy==2.3.2
-pip install laundromat
+# Since people have problems with laundromat, we will drop this part of the task
+#pip install spacy==2.3.2
+#pip install laundromat
 ```
  After the install, you should be able to use
  ```python
 from faker import Faker
 import pandas as pd
-from laundromat.spacy.spacy_model import SpacyModel
+#from laundromat.spacy.spacy_model import SpacyModel
 from faker.providers.credit_card import Provider as CreditCardProvider #Add creditcards to faker
 ```
 
@@ -131,6 +132,8 @@ for index, row in df.iterrows():
 ```
 </details>
 
+<details>
+  <summary>Removed laundromat because of run issues!</summary>
 
 We now have a array with 10 text strings. Using a for-loop we will now see if laundromat can catch all 
 Names and addresses
@@ -160,6 +163,8 @@ Try to run the above for-loop again to see if we catched credit card and ssn thi
 
 You will most likely see that we don't have a 100% success rate, since we didn't spend alot of time setting up
 the function. 
+
+</details>
 
 Feel free to play with both [Faker][faker] and [Laundromat][laundromat] on your own time.
 
