@@ -110,7 +110,7 @@ textArray = [] #Create a empty array
     cc = row[3]
     #Using f string we can now create a new string with the values, and
     #append (add) that string to the text array
-    textArray.append(f'Hi, my name is {name}. I wonder if you deliver to {adresse}. My credi card nr is {cc} and my ssn is {ssn')
+    textArray.append(f'Hi, my name is {name}. I wonder if you deliver to {adress}. My credi card nr is {cc} and my ssn is {ssn}')
 ```
 
 TIP:
