@@ -32,10 +32,9 @@ You are allowed to work in groups of 2-4 students
 
 Github:
 
-Assignment 1 uplaoded on github at : https://github.com/umaimehm/Intro_to_AI/tree/master/assignment1
+Assignment 1 uplaoded on github at : https://github.com/umaimehm/Intro_to_AI_2021/tree/main/assignment1
 
-
-Lab help from previous classes: https://github.com/umaimehm/Intro_to_AI/tree/master/Lab1
+Lab help from previous classes: https://github.com/umaimehm/Intro_to_AI_2021/
 
 
 Submission:
