@@ -45,6 +45,11 @@ We will also take a look on how to work with datetime objects
 
 We will be using [pandas][pandas-doc], [laundromat][laundromat] and [faker][faker]
 
+## Solution
+[Task 1 - 2][solution-fak]
+
+[Task 3][solution-fly]
+
 
 
 ## New imports
@@ -131,6 +136,8 @@ for index, row in df.iterrows():
     textArray.append(f'Hi, my name is {name}. I wonder if you deliver to {adress}')
 ```
 </details>
+
+*Due to issues with spacy (a package that laundromat need to operate correctly), we removed this part of the lab. You can still see how it works in the [solution][solution-fak]*
 
 <details>
   <summary>Removed laundromat because of run issues!</summary>
@@ -351,6 +358,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [faker]: https://github.com/joke2k/faker
 [laundromat]: https://github.com/navikt/laundromat
 [frost]: https://frost.met.no/python_example.html
+[solution-fak]: faker.ipynb
+[solution-fly]: flight.ipynb
 
 
 
