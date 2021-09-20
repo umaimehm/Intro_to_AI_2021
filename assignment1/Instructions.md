@@ -32,7 +32,7 @@ For help:
 
 Use reference lectures of “Data” to recall what we studied. Also take a look at previous labs for help
 
-You are allowed to work in groups of 2-4 students
+You are allowed to work in groups of 0-4 students
 
 Github:
 
