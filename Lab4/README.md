@@ -146,7 +146,7 @@ This can be done by importing sklearn  and use the preprocessing.MinMaxScaler().
 To scale a dataset, you can run:
 
 ```python
-x = df.values #returns a numpy array
+x = df2.values #returns a numpy array
 scaler = preprocessing.MinMaxScaler().fit(x)
 x = scaler.transform(x)
 df = pd.DataFrame(x)
@@ -163,7 +163,7 @@ Output
 If you want to unscale, do:
 
 ```python
-x = df.values #returns a numpy array
+x = df2.values #returns a numpy array
 x = scaler.inverse_transform(x)
 df = pd.DataFrame(x)
 df.head()
@@ -179,7 +179,9 @@ After scaling the data, we can plot them together in a new scatter plot
 
 ![scatter-scaled][scatter3]
 
-Lets make an another scatter plot where we plot each column against "Result" (or column 6 after scaling)
+Lets make an another scatter plot where we plot each column against "Result" (or column 6)
+
+
 
 ```python
 #Scatterplot all columns against last column
@@ -209,6 +211,13 @@ If you compare this to the correlation plot, you'll identify the same columns ha
 ## Let's train a model 
 
 In the task above, we found that Var1 and Var3 had a high correlation with the output. Let's try to train a model on Var1 and evaluate the result.
+
+```python
+x = df2.values #returns a numpy array
+x = scaler.inverse_transform(x)
+df = pd.DataFrame(x)
+df.head()
+```
 
 First let's split the set in a training and a testing set
 
