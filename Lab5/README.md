@@ -390,7 +390,7 @@ This section will be updated after the first lab session
 ## Useful links
 
 
-[pandas cheatsheet][pandas-cheatsheet]
+
 
 <!-- LICENSE -->
 ## License
@@ -431,11 +431,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- links -->
 [api-key]: https://account.mapbox.com/access-tokens/
-[regex]: https://www.geeksforgeeks.org/python-regex-cheat-sheet/
 [solution]: solution.ipynb
-[faker]: https://github.com/joke2k/faker
-[laundromat]: https://github.com/navikt/laundromat
-[frost]: https://frost.met.no/python_example.html
-[cmap]: https://matplotlib.org/stable/tutorials/colors/colormaps.html
+
 
 
