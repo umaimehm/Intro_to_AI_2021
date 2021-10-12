@@ -147,6 +147,8 @@ sns.pairplot(df, vars=df.columns[:-2], hue = "result", markers=["o", "s", "D"])
 
 **OsloBysykkel data**
 
+Feel free to start a new notebook for this task.
+
 **1. Read in the dataset from oslobysykkel, and look for correlation between rows**
 
 
