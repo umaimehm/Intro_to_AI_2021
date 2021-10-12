@@ -180,7 +180,7 @@ def plot_cluster(cluster):
     plt.xlabel('Latitude', fontsize=12)
     plt.ylabel('Longitude', fontsize=12)
 ```
-Now, let plot the clusters:
+Now, lets plot the clusters:
 ```python
 plot_cluster(clust1)
 ```
@@ -217,7 +217,7 @@ This is for those of you who want to dig deeper into data visualization, and not
 
 
 Before continuing: You will need a API key for the rest of this lab to work.
-Go to [mapbox.com] and sign up and create your API key. Copy it and do
+Go to [mapbox.com][api-key] and sign up and create your API key. Copy it and do
 
 ```python
 token = " key "
