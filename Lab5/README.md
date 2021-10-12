@@ -38,7 +38,7 @@
 ## About The Lab
 
 In this lab, we will look at unsupervised learning - clustering.
-This can be a hard task, so for clarity we will use a real world example 
+We will first do clustering on seed data, then for clarity we will use a real world example, using geodata from OsloBysykkel
 
 We will be using [pandas][pandas-doc], [sklearn][sklearn-doc]
 
@@ -70,6 +70,82 @@ from scipy.cluster.vq import kmeans2, whiten
 
 
 ## Tasks
+
+**Seed data**
+
+**1. Read the data**
+
+Read the dataset found in ./data/seeds_dataset.txt
+You can still use pd.read_csv, but as sep you should use "\t"
+
+Lets then see if we can spot some corelations in the set
+
+```python
+corr = df.corr()
+corr.style.background_gradient(cmap='coolwarm')
+```
+<details>
+  <summary>Output</summary>
+
+![corr plot][corr]
+
+</details>
+
+Drop the result column from the dataset, and store it in a variable.
+
+<details>
+  <summary>Hint</summary>
+
+```python
+result = df["result"]
+df.drop(columns="result", inplace=True)
+df.head()
+```
+
+</details>
+
+Prepare the data for the model
+
+```python
+x = np.array(df)
+clusters = 3
+```
+
+and train the model
+
+```python
+kmeans = KMeans(n_clusters=clusters, random_state=0, max_iter=300).fit(x)
+cluster=kmeans.labels_
+```
+
+copy the labels given into the dataframe, so we can use seaborn pairplot
+
+```python
+df["y"]=cluster
+df.head()
+```
+
+We can now do a pairplot to see how it turned out
+
+```python
+sns.pairplot(df, vars=df.columns[:-1], hue = "y", markers=["o", "s", "D"])
+```
+
+and we can also compare it to the original labels
+
+```python
+df["result"]=result
+sns.pairplot(df, vars=df.columns[:-2], hue = "result", markers=["o", "s", "D"])
+```
+
+<details>
+  <summary>Output</summary>
+
+![pair plot][pair]
+
+</details>
+
+**OsloBysykkel data**
 
 **1. Read in the dataset from oslobysykkel, and look for correlation between rows**
 
@@ -335,9 +411,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- images -->
 
 
-
+[corr]: img/corr.png
 [clustplot]: img/clustplot.png
 [mapplot]: img/mapplot.png
+[pair]: img/pair.png
 
 <!-- documentation -->
 [pandas-doc]: https://pandas.pydata.org/docs/reference/index.html#api
