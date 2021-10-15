@@ -282,7 +282,7 @@ Well, to show you that it's easy to switch between algorithms once the data is p
 from sklearn.cluster import AgglomerativeClustering 
 newAlg = AgglomerativeClustering(linkage = 'average', n_clusters=clusters)
 newAlg.fit(coordinates)
-clust3=t.labels_
+clust3=newAlg.labels_
 
 plot_cluster(clust3)
 ```
